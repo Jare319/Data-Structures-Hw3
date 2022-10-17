@@ -1,18 +1,14 @@
-## Getting Started
+# Project for CS3353 - Data Structures and Algorithms
+Parses HTML documents to validate that all tags are balanced. Uses stack data structure to hold/compare tags.
+Program should be run with: java App "html_file_name/path"
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## TODO
+- [ ] Set up stack structure
+- [ ] Set up queue structure
+- [ ] Test both structures
+- [ ] Handle text processing
+- [ ] Comment code
+- [ ] Calculate time complexities
+- [ ] Test on CSX
+- [ ] Create PDFs of code
+- [ ] Create text readme
