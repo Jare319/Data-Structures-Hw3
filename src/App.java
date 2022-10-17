@@ -8,6 +8,6 @@ public class App {
         while (scnr.hasNextLine()) {
             System.out.println(scnr.nextLine());
         }
-        
+        scnr.close();
     }
 }
