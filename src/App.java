@@ -8,8 +8,18 @@ public class App {
         } else {
             File file = new File(args[0]);
             Scanner scnr = new Scanner(file);
+            Stack stack = new Stack();
+            String line;
+            String[] lnArr;
             while (scnr.hasNextLine()) {
-                
+                line = scnr.nextLine();
+                if (line.contains("<")) {
+                    lnArr = line.split("<", 0);
+                    for (int i = 0; i < lnArr.length; i++) {
+                        System.out.println(lnArr[i]);
+                    }
+                    
+                }
             }
             scnr.close();
         }
