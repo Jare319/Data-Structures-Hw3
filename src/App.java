@@ -10,7 +10,6 @@ public class App {
             File file = new File(args[0]);
             Scanner scnr = new Scanner(file);
             Stack stack = new Stack();
-            Queue q1 = new Queue();
             String[] lnArr;
             String line;
             int lnCount = 0;
