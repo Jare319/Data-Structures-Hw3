@@ -9,10 +9,11 @@ public class Queue {
     }
 
     public void enqueue(Node node) {
+        // Handles when queue is empty
         if (this.head == null) {
             this.head = node;
             this.tail = node;
-        } else {
+        } else { // Handles every other case
             Node temp = this.head;
             this.head = node;
             node.setNext(temp);
@@ -21,12 +22,13 @@ public class Queue {
     }
 
     public Node dequeue() {
+        // Handles when the node being removed
         if (this.head.getNext() == null) {
             Node temp = this.head;
             this.head = null;
             this.tail = null;
             return temp;
-        } else {
+        } else { // Handles every other case
             Node temp = this.tail;
             this.tail = this.tail.getPrev();
             temp.setPrev(null);
@@ -36,10 +38,12 @@ public class Queue {
 
     }
 
+    // Returns head node
     public Node getHead() {
         return head;
     }
 
+    // Returns tail node
     public Node getTail() {
         return tail;
     }

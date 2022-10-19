@@ -12,10 +12,10 @@ public class Stack {
         if (q1.getHead() == null) {
             q1.enqueue(node);
         } else {
+            q2.enqueue(node);
             while (q1.getHead() != null) {
                 q2.enqueue(q1.dequeue());
             }
-            q2.enqueue(node);
             while (q2.getHead() != null) {
                 q1.enqueue(q2.dequeue());
             }
@@ -24,5 +24,14 @@ public class Stack {
 
     public Node pop() {
         return this.q1.dequeue();
+    }
+
+    public boolean isEmpty() {
+        if (this.q1.getHead() == null) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }

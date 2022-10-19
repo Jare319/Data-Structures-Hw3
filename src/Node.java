@@ -4,9 +4,10 @@ public class Node {
     Node prev;
     String tag;
 
-    public Node() {
+    public Node(String tag) {
         this.next = null;
         this.prev = null;
+        this.tag = tag;
     }
 
     public void setNext(Node node) {
@@ -23,5 +24,9 @@ public class Node {
 
     public Node getPrev() {
         return this.prev;
+    }
+
+    public String getTag() {
+        return tag;
     }
 }

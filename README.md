@@ -3,10 +3,10 @@ Parses HTML documents to validate that all tags are balanced. Uses stack data st
 Program should be run with: java App "html_file_name/path"
 
 ## TODO
-- [ ] Set up stack structure
-- [ ] Set up queue structure
-- [ ] Test both structures
-- [ ] Handle text processing
+- [x] Set up stack structure
+- [x] Set up queue structure
+- [x] Test both structures
+- [x] Handle text processing
 - [ ] Comment code
 - [ ] Calculate time complexities
 - [ ] Test on CSX
