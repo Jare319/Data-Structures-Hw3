@@ -9,6 +9,6 @@ Program should be run with: java App "path_to_ html_file"
 - [x] Handle text processing
 - [x] Comment code
 - [x] Calculate time complexities
-- [ ] Test on CSX
+- [x] Test on CSX
 - [x] Create PDFs of code
 - [x] Create text readme
