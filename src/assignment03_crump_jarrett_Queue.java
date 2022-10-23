@@ -1,9 +1,9 @@
-public class Queue {
+class Queue {
 
     Node head;
     Node tail;
 
-    public Queue() {
+    public Queue() { // Default constructor
         this.head = null;
         this.tail = null;
     }
